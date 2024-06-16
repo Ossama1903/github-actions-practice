@@ -37,8 +37,4 @@ app.delete("/users/:id", (req, res) => {
   res.status(204).send();
 });
 
-app.listen(4000, () => {
-  console.log("Node app started running");
-});
-
 module.exports = app;

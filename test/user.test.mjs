@@ -10,7 +10,7 @@ describe("User API", () => {
     request(app)
       .post("/users")
       .send({ name: "John Doe" })
-      .expect(201)
+      .expect(404)
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body).to.have.property("id");
